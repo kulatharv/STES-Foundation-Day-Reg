@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>STES Foundation Day - 2025</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f4f9ff;
       color: #333;
@@ -22,45 +25,22 @@
     }
 
     header img.logo {
-      width: 120px;
+      width: 100px;
+    }
+
+    .event-card img {
+      max-width: 100%;
       height: auto;
-      position: absolute;
-      top: 30px;
-    }
-
-    .logo-left {
-      left: 30px;
-      height: 120px;
-    }
-
-    .logo-right {
-      right: 30px;
-
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 30px;
-    }
-
-    header p {
-      margin: 8px 0;
-      font-size: 16px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 20px;
+      border-radius: 8px;
     }
 
     .event-card {
       background-color: white;
-      padding: 20px;
-      margin-bottom: 25px;
       border-left: 6px solid #1b365d;
       border-radius: 8px;
-      box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      margin-bottom: 30px;
       transition: all 0.3s ease;
     }
 
@@ -68,34 +48,14 @@
       transform: translateY(-3px);
     }
 
-    .event-card h3 {
-      margin-top: 0;
-      color: #1b365d;
-    }
-
-    .event-card p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .event-card img {
-      width: 300px;
-      display: block;
-      margin: 10px auto;
-      border-radius: 8px;
-      height: 400px;
-    }
-
     .register-btn {
-      padding: 10px 20px;
       background-color: hwb(268 0% 73%);
       color: white;
       border: none;
       border-radius: 5px;
-      cursor: pointer;
+      padding: 10px 20px;
       text-decoration: none;
       display: inline-block;
-      transition: background-color 0.3s ease;
     }
 
     .register-btn:hover {
@@ -106,39 +66,43 @@
       background-color: #1b365d;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 10px;
       font-size: 14px;
-    }
-
-    @media screen and (max-width: 600px) {
-      header img.logo {
-        width: 50px;
-        top: 10px;
-      }
-
-      header h1 {
-        font-size: 22px;
-      }
-
-      .event-card img {
-        width: 100%;
-        max-width: 100%;
-      }
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="sinhgad-logo.png" alt="Sinhgad Logo" class="logo logo-left" />
-  <img src="nss-logo.png" alt="NSS Logo" class="logo logo-right" />
-  <h1>Sinhgad Institutes, Lonavala</h1>
-  <p><strong>Wishing you a Happy 32<sup>nd</sup> STES Foundation Day</strong></p>
-  <p><em>On the occasion of STES Foundation Day (12 August 2025), NSS and institutes organize the following events:</em></p>
+<header style="background-color: hwb(268 0% 73%);" class="text-white py-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between text-center text-md-start">
+      
+      <!-- Left Logo -->
+      <div class="mb-3 mb-md-0">
+        <img src="sinhgad-logo.png" alt="Sinhgad Logo" class="img-fluid" style="max-height: 80px;" />
+      </div>
+
+      <!-- Center Title & Description -->
+      <div class="flex-grow-1 px-3">
+        <h1 class="h5 mb-2 mb-md-1">Sinhgad Institutes, Lonavala</h1>
+        <p class="mb-1"><strong>Wishing you a Happy 32<sup>nd</sup> STES Foundation Day</strong></p>
+        <p class="mb-0"><em>On the occasion of STES Foundation Day (12 August 2025), NSS and institutes organize the following events:</em></p>
+      </div>
+
+      <!-- Right Logo -->
+      <div class="mb-3 mb-md-0">
+        <img src="nss-logo.png" alt="NSS Logo" class="img-fluid" style="max-height: 80px;" />
+      </div>
+
+    </div>
+  </div>
 </header>
 
-<div class="container">
 
+<div class="container my-5">
+
+  <!-- Event Cards -->
   <div class="event-card">
     <h3>🩸 Blood Donation – SKNCOET</h3>
     <p>Donate blood, save lives. Be a hero this Foundation Day with SKNCOET's drive.</p>
@@ -149,8 +113,8 @@
     <h3>🎬 NAZARIYA'25 – SIT</h3>
     <img src="reel.jpg" alt="Reel Competition" />
     <p>A creative reel-making competition by NSS SIT, celebrating the beauty of STES Lonavala campus.<br>
-    🎥 Reels: 30–60 sec, Vertical (.MP4)<br>
-    📅 Deadline: 10 August 2025</p>
+      🎥 Reels: 30–60 sec, Vertical (.MP4)<br>
+      📅 Deadline: 10 August 2025</p>
     <a href="https://forms.gle/j6DKTB2UhGofkyFD6" class="register-btn" target="_blank">Participate</a>
   </div>
 
@@ -161,16 +125,16 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScAsnmk3XZQGsY895KcJcDZPOiC9tdnkfqD_MFrAk9b2WflhQ/viewform?usp=dialog" class="register-btn" target="_blank">Participate</a>
   </div>
 
-
   <div class="event-card">
     <h3>🧠 Quiz Competition (Battle of Brains) – SIPS</h3>
     <img src="sips.jpg" alt="Quiz Competition" />
     <p>Test your knowledge of India's history, culture, and science in a fun and fast-paced quiz!</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6yjwDN5DuKzIp4ZbKOfranuRUzppDWqC4UykiO7U9fyXQiQ/viewform" class="register-btn" target="_blank">Participate</a>
   </div>
-    <div class="event-card">
+
+  <div class="event-card">
     <h3>🎨 Poster Making – SIBACA</h3>
-    <img src="sibaca" alt="Quiz Competition" />
+    <img src="sibaca" alt="Poster Making" />
     <p>Express creativity through posters. Colors and thoughts are welcome!</p>
     <a href="https://forms.gle/aucNr5yF1GZ5ThWBA" class="register-btn" target="_blank">Participate</a>
   </div>
@@ -180,7 +144,6 @@
     <p>Join hands for a better tomorrow. Cleanliness and kindness drive around Lonavala town.</p>
     <a href="#" class="register-btn" target="_blank">Participate</a>
   </div>
-
 
   <div class="event-card">
     <h3>🎨 Painting – SPS</h3>
@@ -198,11 +161,11 @@
 
 <footer>
   <p>&copy; 2025 Sinhgad Institutes, Lonavala | NSS Unit</p>
-  <p>Contact: atharvkul02@gmail.com </p>
+  <p>Contact: <a href="mailto:atharvkul02@gmail.com" class="text-white">atharvkul02@gmail.com</a></p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-
-
